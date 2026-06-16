@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avantika Manna Resume</title>
+    <style>
+        :root {
+            --sidebar-color: #5a7d7c;
+            --header-bg: #f5d5cb;
+            --text-dark: #333;
+            --text-light: #fff;
+            --accent-blue: #5a7d7c;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-container {
+            width: 800px;
+            background-color: white;
+            display: flex;
+            min-height: 1000px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Left Sidebar */
+        .sidebar {
+            width: 35%;
+            background-color: var(--sidebar-color);
+            color: var(--text-light);
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        .sidebar p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+        }
+
+        .contact-item svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            fill: white;
+        }
+
+        /* Right Content */
+        .main-content {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: var(--header-bg);
+            padding: 60px 40px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .header p {
+            margin: 10px 0 0;
+            font-size: 1.5rem;
+            color: #555;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+        }
+
+        .content-body {
+            padding: 30px 40px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .section-header svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            fill: var(--accent-blue);
+        }
+
+        .section-header h3 {
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+        }
+
+        .content-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .content-list li {
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 15px;
+            line-height: 1.4;
+            color: #444;
+        }
+
+        .content-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+        }
+
+        .project-title, .job-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .date-location {
+            font-size: 0.8rem;
+            color: #777;
+            font-style: italic;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        @media print {
+            body { background-color: white; }
+            .resume-container { box-shadow: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Profile</h2>
+            <p>
+                Ambitious 1st-year ECE student at Academy of Technology with a focus on Full-Stack Development and AI. 
+                National-level hackathon finalist with a proven track record of building AI-powered prototypes.
+            </p>
+
+            <h2>Contact Me</h2>
+            <div class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                (+91) 9088012075
+            </div>
+            <div class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                avantikamanna2307&#64;gmail.com
+            </div>
+            <div class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-3.13-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Chandannagar, Hooghly, WB
+            </div>
+
+            <h2>Skills</h2>
+            <ul class="content-list" style="color: white;">
+                <li>Programming: JavaScript, Python, C, TypeScript</li>
+                <li>Web: React.js, Node.js, Express, HTML/CSS</li>
+                <li>Tools: Git, GitHub, VS Code, Postman</li>
+                <li>Fields: AI/ML, IoT, Full-Stack Dev</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Avantika Manna</h1>
+                <p>ECE Student</p>
+            </div>
+
+            <div class="content-body">
+                <!-- Education -->
+                <div class="section-header">
+                    <svg viewBox="0 0 24 24"><path d="M12 21l-9-5V9l9-5 9 5v7h-2V10.15l-7 3.85-7-3.85V15l7 4 7-4v-2h2v3l-9 5z"/></svg>
+                    <h3>Education</h3>
+                </div>
+                <ul class="content-list">
+                    <li>
+                        <span class="project-title">Academy of Technology (MAKAUT)</span>
+                        Pursuing B.Tech in Electronics and Communication Engineering (1st Year)
+                    </li>
+                </ul>
+
+                <!-- Projects -->
+                <div class="section-header">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    <h3>Project</h3>
+                </div>
+                <ul class="content-list">
+                    <li>
+                        <span class="project-title">FlareForecast: AI Health Prototype</span>
+                        Developed an AI predictor for chronic health conditions; utilized React for dashboard visualization.
+                    </li>
+                    <li>
+                        <span class="project-title">Nirmaan_Netra: AI Construction Monitor</span>
+                        Finalist at Techstorm (IIM Calcutta). Built a real-time dust and debris monitoring system.
+                    </li>
+                </ul>
+
+                <!-- Experience / Achievements -->
+                <div class="section-header">
+                    <svg viewBox="0 0 24 24"><path d="M19 5h-2V3c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H5c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zM9 3h6v2H9V3zm10 17H5V7h14v13z"/></svg>
+                    <h3>Hackathon Achievements</h3>
+                </div>
+                <ul class="content-list">
+                    <li>National Level Finalist - Techstorm, IIM Calcutta</li>
+                    <li>Finalist - National Health Hackathon (FlareForecast)</li>
+                </ul>
+
+                <!-- Language -->
+                <div class="section-header">
+                    <svg viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+                    <h3>Language</h3>
+                </div>
+                <ul class="content-list">
+                    <li>English: Native</li>
+                    <li>Hindi: Native</li>
+                    <li>Bengali: Intermediate</li>
+                    <li>Korean: Intermediate</li>
+                </ul>
+
+                <!-- Leadership -->
+                <div class="section-header">
+                    <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    <h3>Leadership</h3>
+                </div>
+                <ul class="content-list">
+                    <li>Class Representative (CR) - Academy of Technology (ECE)</li>
+                    <li>Community Representative - CodeBird Community</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0c6dcd3cd873a1b',t:'MTc4MTU4MTk1NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
